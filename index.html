@@ -1,39 +1,46 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>National Parks Finder</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
 
-    <!--Jumbotron-->
-    <div class="callout large primary">
-      <div class="row column text-center">
-        <h1>National Parks Finder</h1>
-        <h2 class="subheader">Parks and campground search</h2>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Parks Finder</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!--Jumbotron-->
+  <div class="callout large primary">
+    <div class="row column text-center">
+      <h1>National Parks Finder</h1>
+      <h2 class="subheader">Parks and campground search</h2>
+    </div>
+  </div>
+
+  <!--Main body section wih search bar-->
+  <form class="example" action="action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+
+  <div class="row large-8 large-7 columns">
+    <div class="blog-post">
+      <h4>"It is not what we have that will make us a great nation; it is the way in which we use it." -Theodore
+        Roosevelt</h4>
+      <img class="thumbnail" src="./assets/zion.jpg">
     </div>
 
-    <!--Main body section wih search bar-->
-    <form class="example" action="action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
+    <div id='mapDiv'></div>    
 
-    <div class="row large-8 large-7 columns">
-        <div class="blog-post">
-            <h4>"It is not what we have that will make us a great nation; it is the way in which we use it." -Theodore Roosevelt</h4>
-          <img class="thumbnail" src="./assets/zion.jpg">
-        </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
+    <script src="./assets/script.js" <script>
       $(document).foundation();
     </script>
-  </body>
+</body>
+
 </html>
