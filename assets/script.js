@@ -59,7 +59,9 @@ function init() {
 function loadScript() {                   
   var script = document.createElement('script');                           //Create <script> element
   script.src = 'http://maps.googleapis.com/maps/api/js?key=AIzaSyDFJN8KsV0vonVDnuMQg39pedzZxhh7rVs&callback=init';
-  document.body.appendChild(script); //add element to page
+ 
+  var mapDiv= document.getElementById("mapDiv"); 
+  mapDiv.appendChild(script); //add element to page
 }
 
 window.onload = loadScript; //Onload call
