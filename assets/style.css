@@ -1,61 +1,76 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  h1.header  {
-    font-family: 'Grandstander', cursive;
-  }
+  box-sizing: border-box;
+}
 
-  h2.subheader {
-    font-family: 'Jost', sans-serif;
-    font-size: 30px;
-  }
+/*Jumbotron Headers*/
+h1.header  {
+  font-family: 'Grandstander', cursive;
+  font-size: 45px;
+}
 
-  .example {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-  }
-  
-  /* Styling for the search field */
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  /* Styling for the submit button */
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+h2.subheader {
+  font-family: 'Jost', sans-serif;
+  font-size: 27px;
+}
+
+.example {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Styling for the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Styling for the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#map{
+  height: 100%;
+  width: 100%;
+}
 
 
-/*Random Quote*/
+.blog-post {
+margin: 5px;
+padding: 25px;
+
+}
+
+/*Random Quote with Image*/
 #random-quote {
   color: #e4e1e1;
   text-align: center;
   font-size: 20px;
   font-family: 'La Belle Aurore', cursive;
   text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkblue;
+  border-radius: 10px;
+  box-shadow: 15px;
 }
