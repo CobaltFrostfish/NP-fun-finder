@@ -37,6 +37,7 @@ window.onload = loadScript; //Onload call
 
 
 
+kendra's-work
 //Random Quote Generator
 $(document).ready(function() {
   var quotes = [{
@@ -78,3 +79,6 @@ $(document).ready(function() {
   $('#random-quote').click(getQuote);
   getQuote();
 });
+
+
+ main
