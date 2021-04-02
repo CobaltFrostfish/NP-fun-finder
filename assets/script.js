@@ -1,5 +1,5 @@
 //get the api keys from the websites I want to use
-//api key= AIzaSyDFJN8KsV0vonVDnuMQg39pedzZxhh7rVs
+//api key= AIzaSyAW220mOd1otBnP8lwhTJXTxRzMby1M2PE
 //above is for geolocation api https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY
 
 
@@ -26,7 +26,7 @@ function init() {
 
 function loadScript() {
   var script = document.createElement('script');                           //Create <script> element
-  script.src = 'http://maps.googleapis.com/maps/api/js?key=AIzaSyDFJN8KsV0vonVDnuMQg39pedzZxhh7rVs&callback=init';
+  script.src = 'http://maps.googleapis.com/maps/api/js?key=AIzaSyAW220mOd1otBnP8lwhTJXTxRzMby1M2PE&callback=init';
 
   var mapDiv = document.getElementById("mapDiv");
   mapDiv.appendChild(script); //add element to page
