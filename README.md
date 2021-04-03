@@ -4,7 +4,7 @@
 
 ## Description
 
-An application that helps you find campgrounds and area information. Other information such as fire bans, permits, availability, and alerts show in results. *In-Progress*
+An application that helps you find campgrounds and area information. Other information such as fire bans, permits, availability, and alerts show in results. 
 
 
 ```
@@ -18,7 +18,7 @@ THEN I am given information about the campground, including fire bans, restricti
 ## Mock-Up
 The following images shows the web application's appearance and functionality:
 
-![This app includes a search option, a list of campsites, and information about campsites.](./assets/app-mockup)
+![This app includes a search option, a list of campsites, and information about campsites.](./assets/np-finder.png)
 
 
 ## Technologies Applied
@@ -29,17 +29,12 @@ The following images shows the web application's appearance and functionality:
 
 
 ## Web API’s Used
-- *in-progress… https://ridb.recreation.gov/docs*
+- * Recreation.gov https://ridb.recreation.gov/docs*
+- * Google Maps API
 
 ## Links
-* **[Repository](#)**
-* **[Live site](#)**
-
-
-## Deployed Application
-
-*Placeholder![Image](http://url/a.png)*
-
+* **[Repository](#https://github.com/CobaltFrostfish/NP-fun-finder)**
+* **[Live site](#https://cobaltfrostfish.github.io/NP-fun-finder/)**
 
 ## Contributors
 

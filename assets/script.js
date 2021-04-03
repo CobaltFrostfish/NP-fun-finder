@@ -2,8 +2,8 @@
 //api key= AIzaSyAW220mOd1otBnP8lwhTJXTxRzMby1M2PE
 //above is for geolocation api https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY
 
-var campLat = 44.6969444;
-var campLong= -118.0186111;
+var showEl= document.getElementById('searchBtn');
+
 
 let map;
 
@@ -14,8 +14,10 @@ var showEl = document.getElementById('searchBtn');
 function initMap(){
   
   map = new google.maps.Map(document.getElementById('map'),{
-    center: { lat: campLat, lng: campLong},
-    zoom:8,
+
+    center: { lat: 44.6969444, lng: -118.0186111},
+    zoom:12,
+
   });
 }
 // document.getElementById('searchBtn').addEventListener("click", function (){
@@ -30,9 +32,23 @@ function loadScript() {
   var script = document.createElement('script');                           //Create <script> element
   script.src = 'http://maps.googleapis.com/maps/api/js?key=AIzaSyAW220mOd1otBnP8lwhTJXTxRzMby1M2PE&callback=init';
 
+<<<<<<< HEAD
   var mapDiv = document.getElementById("mapDiv");
   mapDiv.appendChild(script); //add element to page
 };
+=======
+// function to start the map location from google maps api
+// let venueMap; 
+// function init() {
+//   var mapOptions = {                         // set up the map options
+//     center: new google.maps.LatLng("0.0", "0.0"),
+//     mapTypeId: google.maps.MapTypeId.ROADMAP,
+//     zoom: 13
+//   };
+//                                       //Map() draws a map
+//   venueMap = new google.maps.Map(document.getElementById('mapDiv'), mapOptions);
+// }
+>>>>>>> main
 
 // function loadScript() {
 //   var script = document.createElement('script');                           //Create <script> element
@@ -41,8 +57,30 @@ function loadScript() {
 window.onload = loadScript; //Onload call
 
 
+
+// function loadScript() {
+//   var script = document.createElement('script');                           //Create <script> element
+//   script.src = 'http://maps.googleapis.com/maps/api/js?key=AIzaSyAW220mOd1otBnP8lwhTJXTxRzMby1M2PE&callback=init';
+
+//   var mapDiv = document.getElementById("mapDiv");
+//   mapDiv.appendChild(script); //add element to page
+// };
+
+
 // window.onload = loadScript; //Onload call
 
+
+showEl.addEventListener('click',function(){
+  showMap();
+})
+
+// window.onload = loadScript; //Onload call
+
+
+function showMap(){
+  
+  document.getElementById('map').style.display='block';
+}
 
 
 //kendra's-work
@@ -87,6 +125,4 @@ $(document).ready(function() {
   $('#random-quote').click(getQuote);
   getQuote();
 });
-
-
 
