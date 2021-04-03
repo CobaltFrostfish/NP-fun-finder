@@ -13,21 +13,39 @@
     rel="stylesheet">
 </head>
 
-<<body>
+<body>
 
   <!--Jumbotron-->
   <div class="callout large primary">
     <div class="row column text-center">
+
       <h1 class="header">National Parks Finder</h1>
+
       <h2 class="subheader">Parks and campground search</h2>
     </div>
   </div>
 
   <!--Main body section wih search bar-->
   <form class="example">
-    <input type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" class="form-control" placeholder="Find camprgrounds..." title="Search for Campgrounds By Name" name="search">
+    <button onclick="showMap()" class="fill"><i class="fa fa-search"></i></button>
   </form>
+
+
+  <!-- <input type="text" placeholder="Find camprgrounds..." title="Search for Campgrounds By Name"  name="search" rel="txtTooltip" data-toggle="tooltip" data-placement="bottom"> -->
+  <!--PLACEHOLDER Drop Down List-->
+  <!-- <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown Placeholder</button>
+    <div id="camprgroundlist" class="dropdown-content">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+    </div>
+  </div> -->
+  
+
 
 
   <!--Random Quote with Image-->
@@ -40,8 +58,7 @@
 
     <!-- Test container for the map -->
     <div id='map'></div>
-
-
+    
     <div id='mapDiv'>hello</div>    
 
 
