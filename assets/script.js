@@ -115,3 +115,4 @@ $(document).ready(function () {
     getQuote();
 });
 
+// prjoect java
