@@ -3,12 +3,20 @@
 }
 
 /*Jumbotron Headers*/
-h1.header  {
+
+div.callout.primary {
+  background-color: #606C38;
+}
+
+h1.header {
+  color: #DDA15E;
   font-family: 'Grandstander', cursive;
-  font-size: 45px;
+  font-size: 47px;
+  text-shadow: 2px #DDA15E;
 }
 
 h2.subheader {
+  color: #FEFAE0;
   font-family: 'Jost', sans-serif;
   font-size: 27px;
 }
@@ -20,6 +28,7 @@ h2.subheader {
 }
 
 /* Styling for the search field */
+
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
@@ -27,9 +36,25 @@ form.example input[type=text] {
   float: left;
   width: 80%;
   background: #f1f1f1;
+  flex-shrink: inherit;
+}
+
+form.example input[class]:focus {
+  color: #FEFAE0;
+  background: #DDA15E;
+  border-color: #3a5a40;
+  box-shadow: 0px 1px 1px #3a5a40 inset, 0px 0px 8px #3a5a40;
+}
+
+form.example input[placeholder] {
+  color: #dad7cd;
+  font-family: 'Grandstander', cursive;
+  font-size: 15px;
+  text-align: center;
 }
 
 /* Styling for the submit button */
+
 form.example button {
   float: left;
   width: 20%;
@@ -52,19 +77,22 @@ form.example::after {
   display: table;
 }
 
-#map{
+#map {
   height: 100%;
   width: 100%;
 }
 
+.row.columns {
+  background-color: #606C38;
+}
 
 .blog-post {
-margin: 5px;
-padding: 25px;
-
+  margin: 5px;
+  padding: 25px;
 }
 
 /*Random Quote with Image*/
+
 #random-quote {
   color: #e4e1e1;
   text-align: center;

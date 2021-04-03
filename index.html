@@ -13,7 +13,7 @@
     rel="stylesheet">
 </head>
 
-<<body>
+<body>
 
   <!--Jumbotron-->
   <div class="callout large primary">
@@ -25,8 +25,10 @@
 
   <!--Main body section wih search bar-->
   <form class="example">
-    <input type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" class="form-control" placeholder="Find camprgrounds..." title="Search for Campgrounds By Name"
+      name="search">
+
+    <button onclick="showMap()" class="fill"><i class="fa fa-search"></i></button>
   </form>
 
 
@@ -50,7 +52,7 @@
     <script>
       $(document).foundation();
     </script>
-    <script src="./assets/script.js"> </script>
+    <script src="assets/script.js"> </script>
   <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFJN8KsV0vonVDnuMQg39pedzZxhh7rVs&callback=initMap&libraries=&v=weekly"
       async
