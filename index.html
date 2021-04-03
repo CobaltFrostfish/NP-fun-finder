@@ -36,35 +36,42 @@
     <!--Main body section wih search bar-->
     <form class="example">
       <input type="text" placeholder="Search.." name="search">
+
       <button type="button" id="searchBtn"><i class="fa fa-search"></i></button>
     </form>
 
 
 
-    <!--Random Quote with Image-->
-    <div class="row large-8 large-7 columns">
-      <div class="blog-post">
-        <div id="random-quote">
+
+      <!--Random Quote with Image-->
+      <div class="row large-8 large-7 columns">
+        <div class="blog-post">
+          <div id="random-quote">
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Test container for the map -->
-    <div id='map'></div>
-
-
-    <div id='mapDiv'></div>
+      <!-- Test container for the map -->
+      <div id='map'></div>
 
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <script src="./assets/script.js"> </script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFJN8KsV0vonVDnuMQg39pedzZxhh7rVs&callback=initMap&libraries=&v=weekly"
-      async></script>
+
+
+
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+      <script>
+        $(document).foundation();
+      </script>
+      <script src="./assets/script.js"></script>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFJN8KsV0vonVDnuMQg39pedzZxhh7rVs&callback=initMap&libraries=&v=weekly"
+        async></script>
+      <script>
+        function showMap() {
+          $("#map").show();
+        }</script>
+
 
   </body>
 
