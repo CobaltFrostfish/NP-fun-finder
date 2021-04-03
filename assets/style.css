@@ -1,5 +1,5 @@
 * {
- kendra's-work
+
   box-sizing: border-box;
 }
 
@@ -53,10 +53,7 @@ form.example::after {
   display: table;
 }
 
-#map{
-  height: 100%;
-  width: 100%;
-}
+
 
 
 .blog-post {
@@ -74,10 +71,8 @@ padding: 25px;
   text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkblue;
   border-radius: 10px;
   box-shadow: 15px;
-}
-
     box-sizing: border-box;
-  }
+}
   
   .example {
     margin: auto;
@@ -121,5 +116,9 @@ padding: 25px;
   #map{
     height: 100%;
     width: 100%;
+    display: none;
   }
- main
+
+  #mapDiv{
+    display: none;
+  }
