@@ -1,16 +1,31 @@
 //get the api keys from the websites I want to use
 //api key= AIzaSyAW220mOd1otBnP8lwhTJXTxRzMby1M2PE
 //above is for geolocation api https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY
+
 var showEl= document.getElementById('searchBtn');
+
 
 let map;
 
+var searchBtn = document.getElementById('searchBtn');
+
+
+
 function initMap(){
   map = new google.maps.Map(document.getElementById('map'),{
+
     center: { lat: 44.6969444, lng: -118.0186111},
     zoom:12,
+
   });
 }
+// document.getElementById('searchBtn').addEventListener("click", function (){
+//  showMap();
+// })
+
+function showMap(){
+  document.getElementByID('map').style.display='show';
+  }
 
 // function to start the map location from google maps api
 // let venueMap; 
@@ -33,11 +48,25 @@ function initMap(){
 // };
 
 
+
+// function loadScript() {
+//   var script = document.createElement('script');                           //Create <script> element
+//   script.src = 'http://maps.googleapis.com/maps/api/js?key=AIzaSyAW220mOd1otBnP8lwhTJXTxRzMby1M2PE&callback=init';
+
+//   var mapDiv = document.getElementById("mapDiv");
+//   mapDiv.appendChild(script); //add element to page
+// };
+
+
 // window.onload = loadScript; //Onload call
+
 
 showEl.addEventListener('click',function(){
   showMap();
 })
+
+// window.onload = loadScript; //Onload call
+
 
 function showMap(){
   
@@ -87,5 +116,4 @@ $(document).ready(function() {
   $('#random-quote').click(getQuote);
   getQuote();
 });
-
 
