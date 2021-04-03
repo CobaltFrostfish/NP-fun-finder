@@ -15,7 +15,7 @@ function initMap(){
 // function to start the map location from google maps api
 // let venueMap; 
 // function init() {
-//   var mapOptions = {                        // set up the map options
+//   var mapOptions = {                         // set up the map options
 //     center: new google.maps.LatLng("0.0", "0.0"),
 //     mapTypeId: google.maps.MapTypeId.ROADMAP,
 //     zoom: 13
