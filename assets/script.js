@@ -114,5 +114,3 @@ $(document).ready(function () {
     $('#random-quote').click(getQuote);
     getQuote();
 });
-
-// prjoect java
