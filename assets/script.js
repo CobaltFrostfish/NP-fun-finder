@@ -2,7 +2,7 @@
 //api key= AIzaSyAW220mOd1otBnP8lwhTJXTxRzMby1M2PE
 //above is for geolocation api https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY
 
-var showEl= document.getElementById('searchBtn');
+// var showEl= document.getElementById('searchBtn');
 
 
 let map;
@@ -24,9 +24,9 @@ function initMap(){
 //  showMap();
 // })
 
-function showMap(){
-  document.getElementByID('map').style.display='show';
-}
+// function showMap(){
+//   document.getElementByID('map').style.display='show';
+// }
 
 function loadScript() {
   var script = document.createElement('script');                           //Create <script> element
